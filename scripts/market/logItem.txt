@@ -1,0 +1,191 @@
+Имя;цена;куплен
+StatTrak™ USP-S | Torque (Minimal Wear);3,17;true
+USP-S | Cyrex (Factory New);3,15;true
+★ Gut Knife | Safari Mesh (Field-Tested);69,14;true
+StatTrak™ AK-47 | Uncharted (Field-Tested);2,54;true
+USP-S | Cortex (Battle-Scarred);2,07;true
+StatTrak™ Desert Eagle | Oxide Blaze (Minimal Wear);1,45;true
+Glock-18 | Candy Apple (Factory New);1,25;true
+AK-47 | Redline (Field-Tested);13,14;true
+StatTrak™ AWP | Mortis (Factory New);16,99;true
+AUG | Torque (Minimal Wear);4,17;true
+Glock-18 | Nuclear Garden (Field-Tested);3,71;true
+AWP | Acheron (Factory New);3,03;true
+FAMAS | Meltdown (Field-Tested);3,11;true
+StatTrak™ SG 553 | Tiger Moth (Battle-Scarred);1,8;true
+AK-47 | Emerald Pinstripe (Minimal Wear);9,55;true
+AK-47 | Legion of Anubis (Minimal Wear);19,03;true
+StatTrak™ SSG 08 | Parallax (Well-Worn);1,06;true
+AK-47 | Baroque Purple (Field-Tested);3,01;true
+StatTrak™ AK-47 | Frontside Misty (Battle-Scarred);20,79;true
+AK-47 | Orbit Mk01 (Minimal Wear);9,51;true
+StatTrak™ Desert Eagle | Blue Ply (Battle-Scarred);0,63;true
+AWP | Corticera (Field-Tested);10,97;true
+AWP | Sun in Leo (Field-Tested);8,36;true
+StatTrak™ M4A1-S | Basilisk (Field-Tested);14,14;true
+StatTrak™ P2000 | Ivory (Field-Tested);0,17;true
+AK-47 | Vulcan (Field-Tested);107,77;true
+StatTrak™ SG 553 | Cyrex (Field-Tested);8,05;true
+StatTrak™ SG 553 | Cyrex (Field-Tested);8,11;true
+AWP | Redline (Field-Tested);29,62;true
+StatTrak™ P250 | X-Ray (Field-Tested);1,62;true
+StatTrak™ AK-47 | Phantom Disruptor (Field-Tested);13,89;true
+StatTrak™ Galil AR | Kami (Battle-Scarred);0,66;true
+Desert Eagle | Night (Field-Tested);2,36;true
+StatTrak™ Glock-18 | Royal Legion (Field-Tested);3,52;true
+M4A4 | Global Offensive (Minimal Wear);2,63;true
+MAC-10 | Propaganda (Minimal Wear);4,76;true
+AWP | Fever Dream (Battle-Scarred);5,24;true
+AK-47 | Safety Net (Field-Tested);5,04;true
+StatTrak™ Glock-18 | Moonrise (Factory New);3,76;true
+AWP | Corticera (Field-Tested);11,15;true
+AK-47 | Blue Laminate (Field-Tested);7,07;true
+Glock-18 | Water Elemental (Factory New);8,39;true
+StatTrak™ AK-47 | Orbit Mk01 (Field-Tested);21,59;true
+AK-47 | Rat Rod (Well-Worn);3,86;true
+StatTrak™ AK-47 | Elite Build (Battle-Scarred);3,54;true
+Desert Eagle | Midnight Storm (Field-Tested);9,99;true
+M4A1-S | Guardian (Field-Tested);19,45;true
+StatTrak™ M4A4 | Buzz Kill (Minimal Wear);25,29;true
+StatTrak™ AWP | Redline (Field-Tested);58,43;true
+P250 | Mint Kimono (Minimal Wear);1,65;true
+AK-47 | Slate (Well-Worn);4,1;true
+M4A4 | Evil Daimyo (Factory New);3,51;true
+AK-47 | Emerald Pinstripe (Minimal Wear);9,31;true
+Desert Eagle | Night (Battle-Scarred);2,3;true
+M4A1-S | Atomic Alloy (Minimal Wear);26,12;true
+StatTrak™ FAMAS | Eye of Athena (Field-Tested);6,65;true
+AK-47 | Frontside Misty (Field-Tested);13,58;true
+Glock-18 | Candy Apple (Minimal Wear);0,94;true
+Glock-18 | Neo-Noir (Battle-Scarred);5,53;true
+AWP | Corticera (Minimal Wear);12,16;true
+M4A1-S | Cyrex (Field-Tested);14,88;true
+AK-47 | Red Laminate (Battle-Scarred);20,39;true
+P250 | Mint Kimono (Minimal Wear);1,56;true
+AWP | Phobos (Factory New);1,62;true
+StatTrak™ Galil AR | Rocket Pop (Minimal Wear);3,14;true
+StatTrak™ Five-SeveN | Urban Hazard (Factory New);1,98;true
+USP-S | Stainless (Battle-Scarred);2,11;true
+StatTrak™ Desert Eagle | Oxide Blaze (Factory New);2,04;true
+UMP-45 | Carbon Fiber (Factory New);0,22;true
+M4A4 | Spider Lily (Battle-Scarred);0,62;true
+AWP | Pit Viper (Battle-Scarred);0,48;true
+PP-Bizon | Embargo (Field-Tested);0,64;true
+CZ75-Auto | Vendetta (Factory New);0,47;true
+AK-47 | Uncharted (Battle-Scarred);0,5;true
+StatTrak™ AUG | Arctic Wolf (Battle-Scarred);1,89;true
+P250 | Asiimov (Battle-Scarred);1,9;true
+B Squadron Officer | SAS;1,32;true
+M4A1-S | Nitro (Field-Tested);2,19;true
+Five-SeveN | Monkey Business (Field-Tested);2,02;true
+USP-S | Torque (Factory New);1,56;true
+Desert Eagle | Sputnik (Factory New);0,47;true
+StatTrak™ AK-47 | Uncharted (Field-Tested);2,55;true
+AWP | Pit Viper (Minimal Wear);0,58;true
+SSG 08 | Parallax (Battle-Scarred);0,52;true
+Gamma Case;0,49;true
+AK-47 | Uncharted (Field-Tested);0,5;true
+Stockholm 2021 Legends Sticker Capsule;0,28;true
+USP-S | Black Lotus (Field-Tested);0,43;true
+Dreams & Nightmares Case;1,28;true
+MAC-10 | Silver (Factory New);0,22;true
+Glove Case;1,79;true
+CZ75-Auto | Tacticat (Field-Tested);0,36;true
+Gamma Case;0,49;true
+Gamma Case;0,49;true
+PP-Bizon | Fuel Rod (Well-Worn);0,61;true
+AK-47 | Uncharted (Field-Tested);0,5;true
+SCAR-20 | Carbon Fiber (Factory New);0,24;true
+Negev | Lionfish (Field-Tested);0,28;true
+Dreams & Nightmares Case;1,28;true
+AK-47 | Elite Build (Well-Worn);1,25;true
+M4A1-S | Fizzy POP (Field-Tested);0,35;true
+Dreams & Nightmares Case;1,28;true
+Desert Eagle | Bronze Deco (Factory New);0,37;true
+USP-S | Blood Tiger (Minimal Wear);1,21;true
+M4A1-S | Basilisk (Field-Tested);4,74;true
+StatTrak™ AK-47 | Uncharted (Field-Tested);2,58;true
+M4A4 | Evil Daimyo (Factory New);3,55;true
+StatTrak™ AK-47 | Uncharted (Field-Tested);2,65;true
+AWP | Atheris (Well-Worn);2,18;true
+USP-S | Whiteout (Battle-Scarred);2,49;true
+Glock-18 | Reactor (Factory New);8,87;true
+AK-47 | Redline (Field-Tested);13,05;true
+M4A1-S | Bright Water (Minimal Wear);26,21;true
+MAC-10 | Neon Rider (Field-Tested);5,41;true
+Five-SeveN | Monkey Business (Minimal Wear);8,73;true
+StatTrak™ SG 553 | Darkwing (Factory New);7,65;true
+StatTrak™ USP-S | Cyrex (Minimal Wear);6,45;true
+StatTrak™ CZ75-Auto | Hexane (Field-Tested);1,27;true
+MAC-10 | Ultraviolet (Field-Tested);0,82;true
+P250 | Digital Architect (Well-Worn);16,32;true
+M4A4 | Global Offensive (Factory New);3,14;true
+AWP | Worm God (Minimal Wear);1,38;true
+StatTrak™ CZ75-Auto | Tacticat (Field-Tested);0,81;true
+M4A4 | Converter (Minimal Wear);0,93;true
+M4A1-S | Guardian (Field-Tested);19,49;true
+AK-47 | Rat Rod (Factory New);8,43;true
+Negev | Man-o'-war (Field-Tested);0,1;true
+USP-S | Lead Conduit (Field-Tested);0,36;true
+SCAR-20 | Outbreak (Well-Worn);0,11;true
+StatTrak™ Glock-18 | Wasteland Rebel (Factory New);28,73;true
+StatTrak™ AK-47 | Orbit Mk01 (Minimal Wear);29,24;true
+StatTrak™ AK-47 | Legion of Anubis (Field-Tested);32,39;true
+USP-S | Royal Blue (Field-Tested);7,73;true
+StatTrak™ AK-47 | Blue Laminate (Minimal Wear);19,31;true
+FAMAS | Meltdown (Minimal Wear);4,67;true
+StatTrak™ M4A4 | Spider Lily (Minimal Wear);5,71;true
+Dual Berettas | Marina (Minimal Wear);4,19;true
+StatTrak™ Desert Eagle | Oxide Blaze (Factory New);2,03;true
+CZ75-Auto | Syndicate (Factory New);2,19;true
+M4A4 | Zirka (Minimal Wear);17,92;true
+StatTrak™ SG 553 | Tiger Moth (Battle-Scarred);1,82;true
+SG 553 | Pulse (Well-Worn);1,59;true
+MP9 | Setting Sun (Minimal Wear);2,9;true
+StatTrak™ SG 553 | Pulse (Well-Worn);2,3;true
+CZ75-Auto | Syndicate (Minimal Wear);0,78;true
+StatTrak™ Dual Berettas | Dezastre (Field-Tested);1,15;true
+AWP | Pit Viper (Minimal Wear);0,58;true
+P250 | Vino Primo (Factory New);9,94;true
+Glock-18 | Candy Apple (Minimal Wear);0,92;true
+MAC-10 | Indigo (Minimal Wear);1,34;true
+StatTrak™ P2000 | Pulse (Minimal Wear);1,15;true
+Glock-18 | Red Tire (Factory New);1,05;true
+StatTrak™ Sawed-Off | Apocalypto (Field-Tested);0,97;true
+Desert Eagle | Light Rail (Factory New);3,19;true
+P250 | Black & Tan (Minimal Wear);3,12;true
+Glock-18 | Pink DDPAT (Battle-Scarred);20,38;true
+M4A4 | The Coalition (Minimal Wear);21,92;true
+StatTrak™ P250 | Cyber Shell (Factory New);3,14;true
+StatTrak™ Glock-18 | Royal Legion (Field-Tested);3,52;true
+StatTrak™ USP-S | Guardian (Field-Tested);3,67;true
+M4A4 | Cyber Security (Well-Worn);5,31;true
+AK-47 | Baroque Purple (Battle-Scarred);2,84;true
+P250 | Red Rock (Field-Tested);2,73;true
+MAG-7 | Praetorian (Factory New);1,85;true
+P250 | Vino Primo (Minimal Wear);5,93;true
+StatTrak™ AK-47 | Blue Laminate (Factory New);19,34;true
+AWP | Sun in Leo (Field-Tested);8,25;true
+USP-S | Royal Blue (Minimal Wear);8,65;true
+P250 | Franklin (Field-Tested);1,06;true
+StatTrak™ SG 553 | Phantom (Minimal Wear);1,43;true
+StatTrak™ USP-S | Guardian (Field-Tested);3,66;true
+M4A4 | Global Offensive (Minimal Wear);2,63;true
+StatTrak™ Five-SeveN | Buddy (Factory New);3,13;true
+StatTrak™ AWP | Worm God (Factory New);6,49;true
+P250 | Franklin (Field-Tested);1,06;true
+StatTrak™ P250 | Cassette (Factory New);1,01;true
+Desert Eagle | Light Rail (Factory New);3,19;true
+USP-S | Cortex (Field-Tested);2,66;true
+StatTrak™ MAC-10 | Lapis Gator (Factory New);1,42;true
+P2000 | Grassland Leaves (Field-Tested);3,26;true
+StatTrak™ MAC-10 | Carnivore (Factory New);1,5;true
+M4A4 | Cyber Security (Field-Tested);6,22;true
+StatTrak™ Five-SeveN | Case Hardened (Minimal Wear);15,7;true
+M4A1-S | Leaded Glass (Field-Tested);6,19;true
+Galil AR | Signal (Minimal Wear);0,61;true
+MP9 | Hydra (Field-Tested);4,44;true
+Dreams & Nightmares Case;1,28;false
+Nova | Caged Steel (Factory New);0,21;true
+Music Kit | Amon Tobin, All for Dust;2,61;true
+Canals Pin;3,55;true

@@ -1,0 +1,72 @@
+module.exports = [
+  {
+    name: 'knifes',
+    type: 'knife',
+    items: [
+      'Bayonet',
+      'Bowie',
+      'Butterfly',
+      'Falchion',
+      'Flip',
+      'Gut',
+      'Huntsman',
+      'Karambit',
+      'M9 Bayonet',
+      'Navaja',
+      'Shadow Daggers',
+      'Stiletto',
+      'Talon',
+      'Ursus',
+      'Classic',
+      'Skeleton',
+      'Nomad',
+      'Survival',
+      'Paracord',
+    ],
+  },
+  {
+    name: 'gloves',
+    type: 'gloves',
+    items: ['Bloodhound', 'Driver', 'Hand Wraps', 'Hydra', 'Moto', 'Specialist', 'Sport'],
+  },
+  {
+    name: 'pistols',
+    type: 'pistol',
+    items: ['CZ75-Auto', 'Desert Eagle', 'Dual Berettas', 'Five-SeveN', 'Glock-18', 'P2000', 'P250', 'R8 Revolver', 'Tec-9', 'USP-S'],
+  },
+  {
+    name: 'smgs',
+    type: 'smg',
+    items: ['MAC-10', 'MP5-SD', 'MP7', 'MP9', 'P90', 'PP-Bizon', 'UMP-45'],
+  },
+  {
+    name: 'assault-rifles',
+    type: 'rifle',
+    items: ['AK-47', 'AUG', 'FAMAS', 'Galil AR', 'M4A1-S', 'M4A4', 'SG 553'],
+  },
+  {
+    name: 'sniper-rifles',
+    type: 'sniper rifle',
+    items: ['AWP', 'G3SG1', 'SCAR-20', 'SSG 08'],
+  },
+  {
+    name: 'shotguns',
+    type: 'shotgun',
+    items: ['MAG-7', 'Nova', 'Sawed-Off', 'XM1014'],
+  },
+  {
+    name: 'machineguns',
+    type: 'machinegun',
+    items: ['M249', 'Negev'],
+  },
+  {
+    name: 'keys',
+    type: 'key',
+    items: ['Case Key', 'Capsule Key'],
+  },
+  {
+    name: 'other',
+    type: 'sticker|agent|case|graffiti|music kit|pin|patch',
+    items: ['sticker', 'agent', 'case', 'graffiti', 'music kit', 'pin', 'patch'],
+  },
+];

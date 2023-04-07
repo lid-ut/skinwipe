@@ -1,0 +1,241 @@
+{
+  "premus": {
+    "type": "premium",
+    "days": 2
+  },
+  "summer": {
+    "type": "premium",
+    "days": 5
+  },
+  "coins500": {
+    "type": "coins",
+    "amount": 500
+  },
+  "withloveskinswipe": {
+    "type": "coins",
+    "amount": 500
+  },
+  "premcz": {
+    "type": "premium",
+    "days": 2
+  },
+  "14days": {
+    "type": "premium",
+    "days": 14
+  },
+  "premvi": {
+    "type": "premium",
+    "days": 2
+  },
+  "prembr": {
+    "type": "premium",
+    "days": 2
+  },
+  "premag": {
+    "type": "premium",
+    "days": 2
+  },
+  "mail3": {
+    "type": "premium",
+    "days": 3
+  },
+  "premper": {
+    "type": "premium",
+    "days": 2
+  },
+  "prempr": {
+    "type": "premium",
+    "days": 2
+  },
+  "premsp": {
+    "type": "premium",
+    "days": 2
+  },
+  "premch": {
+    "type": "premium",
+    "days": 2
+  },
+  "premfr": {
+    "type": "premium",
+    "days": 2
+  },
+  "premger": {
+    "type": "premium",
+    "days": 2
+  },
+  "premeng": {
+    "type": "premium",
+    "days": 2
+  },
+  "premmex": {
+    "type": "premium",
+    "days": 2
+  },
+
+  "fixed7": {
+    "type": "premium",
+    "days": 7
+  },
+  "fixed72": {
+    "type": "premium",
+    "days": 7
+  },
+  "fixed73": {
+    "type": "premium",
+    "days": 14
+  },
+  "yesfixed": {
+    "type": "premium",
+    "days": 7
+  },
+  "gaymer": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "trend": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "prepodsteam": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "flaxxgod": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "clevermonkey": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "vnatyre": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "ramzikgg": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "rushbmarket": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "marketstart": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "llluiko": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "kyzya": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "pixeli": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "start": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "wildliss": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "yan": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "prepodmoney": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "kura": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "truedad": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "poland": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "germany": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "brazil": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "turkey": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "usa": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "uk": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  },
+  "france": {
+    "type": "money",
+    "group": "money_1",
+    "amount": 5,
+    "registeredDaysCount": 1
+  }
+}

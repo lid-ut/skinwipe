@@ -1,0 +1,8 @@
+/.git
+/.vscode
+node_modules
+*.min.js
+/landing
+/migrations
+/scripts
+/test

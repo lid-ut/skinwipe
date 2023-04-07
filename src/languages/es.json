@@ -1,0 +1,273 @@
+{
+  "newComment": {
+    "auction": "{user} dejó un nuevo comentario debajo de su auction",
+    "skin": "{user} dejó un nuevo comentario debajo de su skin",
+    "trade": "{user} dejó un nuevo comentario debajo de su trade",
+    "partnerTrade": "{user} dejó un comentario en el comercio contigo"
+  },
+  "newLike": {
+    "skin": "{user} le gustó tu skin",
+    "auction": "{user} le gustó tu subasta",
+    "trade": "{user} le gustó tu comercio"
+  },
+  "market": {
+    "acceptSteam": {
+      "title": "Venta +{price}$!",
+      "content": "Aceptar un intercambio en steam"
+    },
+    "sellerClose": {
+      "title": "You are banned for not accepting a trade from the market",
+      "content": "Unlocked date: {date}"
+    },
+    "sellerCloseFirst": {
+      "title": "You have not accepted a trade from the market",
+      "content": "First time we warn you, next time will be banned!"
+    }
+  },
+  "tradeBanEnd": {
+    "skin": "El artículo se puede retirar en steam"
+  },
+  "faqCoinsPush": {
+    "title": "¿No recibiste tus 50 monedas?",
+    "content": "¡Lee las preguntas frecuentes y obténlas gratis!"
+  },
+  "achievements": {
+    "oneTradeCreated": {
+      "title": "Felicitaciones, tienes un nuevo logro!",
+      "content": "Creaste tu primer intercambio!"
+    },
+    "tenTradesAccepted": {
+      "title": "Felicitaciones, tienes un nuevo logro!",
+      "content": "Has aceptado 10 intercambios!"
+    },
+    "fiftyTradesAccepted": {
+      "title": "Felicitaciones, tienes un nuevo logro!",
+      "content": "Has aceptado 50 intercambios!"
+    },
+    "hundredTradesAccepted": {
+      "title": "Felicitaciones, tienes un nuevo logro!",
+      "content": "Has aceptado 100 intercambios!"
+    }
+  },
+  "getSkinSuccess": {
+    "title": "El trade está listo",
+    "content": "Tu piel te está esperando en Steam!"
+  },
+
+  "getSkinWait": {
+    "title": "Genial!",
+    "content": "La piel vendrá en unos 5 minutos"
+  },
+
+  "getSkinError": {
+    "title": "Lo siento...",
+    "content": "Parece que no puedes intercambiar, intenta crear un intercambio para que alguien descubra el motivo."
+  },
+
+  "newFriend": {
+    "title": "Congratulations!",
+    "content": "You got 50 coins for bringing a friend!"
+  },
+  "inviteFriends": {
+    "title": "Invite friend to app",
+    "content": "And get 50 coins!"
+  },
+  "friends": {
+    "actionCreated": {
+      "title": "Your friend {name} created auction!",
+      "content": "Check it!"
+    },
+    "newUser": {
+      "title": "Your friend из Steam {name} installed SkinSwipe!",
+      "content": "Add him to friends!"
+    }
+  },
+  "noSub": {
+    "1day": {
+      "title": "Olvidó activar premium?",
+      "content": "Suscríbase ahora!"
+    },
+    "7days": {
+      "title": "Date prisa para activar premium",
+      "content": "Obtén un estado premium y crea más subastas y oficios!"
+    }
+  },
+
+  "addPremiumAfterTradeban": {
+    "title": "Hola, tienes una prohibición comercial, mantén una prima por 3 días",
+    "content": "Ahora puedes comerciar por completo!"
+  },
+
+  "inactiveUser": {
+    "1day": {
+      "title": "Crear un supertrade",
+      "content": "¡Y miles de personas lo verán!"
+    },
+    "2days": {
+      "title": "Te criamos en la sección de Personas",
+      "content": "¡Espera nuevas ofertas!"
+    },
+    "3days": {
+      "title": "Nosotros te acreditamos 100 SkinCoins",
+      "content": "¡Gasta sabiamente!"
+    },
+    "4days": {
+      "title": "Ha pasado tanto tiempo",
+      "content": "Vea las novedades en la sección Subastas"
+    },
+    "5days": {
+      "title": "We gifting you 2 days premium!",
+      "content": "You weren't expecting this, right?"
+    },
+    "twoDaysAfterInactive": {
+      "title": "50% off the price on Premium!",
+      "content": "24 hours till end"
+    }
+  },
+  "inactiveNotRegistered": {
+    "10minutes": {
+      "title": "Finish registration",
+      "content": "And get 50 coins by promocode WELCOME"
+    },
+    "3days": {
+      "title": "Special offer",
+      "content": "Use promocode WELCOME and get your 50 coins!"
+    }
+  },
+  "inactiveWithoutActivity": {
+    "1days": {
+      "title": "Return to SkinSwipe!",
+      "content": "Don't pay for skins, you can get them free!"
+    },
+    "2days": {
+      "title": "It's been so long.",
+      "content": "Check what's new in auctions."
+    }
+  },
+  "endOfTradeBan": {
+    "title": "Tradeban is over",
+    "content": "Create your new auction!"
+  },
+  "quests": {
+    "noActivity": {
+      "title": "Try quests",
+      "content": "And get reward every day!"
+    },
+    "notRewarded": {
+      "title": "Get your reward",
+      "content": "For finished quest!"
+    },
+    "notActive2Days": {
+      "title": "Check quests!",
+      "content": "Daily reward waiting for you!"
+    },
+    "questsNotActive3Days": {
+      "title": "Lets go complete quests!",
+      "content": "We are waiting for you."
+    }
+  },
+  "auction": {
+    "closed": {
+      "title": "La subasta ha expirado",
+      "content": "¡Crea uno nuevo!"
+    },
+    "upYourAuction": {
+      "title": "Elevar la subasta en la lista",
+      "content": "¡Y obtenga más ofertas!"
+    }
+  },
+  "bets": {
+    "accepted": {
+      "title": "¡{{1}} aceptó su oferta en la subasta!",
+      "content": "¡Confirma el intercambio en Steam!"
+    },
+    "created": {
+      "title": "¡{{1}} hizo una oferta en su subasta!",
+      "content": "Es hora de ver lo que te han ofrecido ;)"
+    },
+    "reject": {
+      "title": "Su oferta ha sido rechazada!",
+      "content": "Pase para ver"
+    },
+    "betterBetPlaced": {
+      "title": "{{1}} hizo una apuesta en ${{2}} mayor que la suya",
+      "content": "¡Ofrezca una nueva oferta!"
+    },
+    "betHavenotAccepted": {
+      "title": "{{1}} no aceptó su oferta en la subasta",
+      "content": "¡Escríbelo y ofrece un intercambio!"
+    }
+  },
+  "userTradeAllowed": {
+    "title": "Después de 7 días puedes",
+    "content": "Steam permite compartir máscaras después de 7 días si lo hace por primera vez. ¿Crear una subasta?"
+  },
+  "inventoryUpdated": {
+    "title": "Su inventario ha sido actualizado!",
+    "content": " "
+  },
+  "inventoryHidden": {
+    "title": "No se puede actualizar su inventario!",
+    "content": "Haz tu inventario abierto"
+  },
+  "skinsUnlocked": {
+    "title": "¡Tus máscaras están desbloqueadas!",
+    "content": "¡Ahora puedes comerciar!"
+  },
+  "cannotUpdateInventory": {
+    "title": "No se puede actualizar su inventario!",
+    "content": "Intenta nuevamente más tarde"
+  },
+  "superTrade": {
+    "created": {
+      "title": "Un usuario está interesado en tu piel.",
+      "content": "{{username}} creó una supercomercia sobre el tema que tienes. Mira lo que da a cambio"
+    },
+    "closed": {
+      "title": "Super Trade está cerrado",
+      "content": "Intenta nuevamente"
+    }
+  },
+  "trade": {
+    "accepted": {
+      "title": "{{name}} aceptó su operación",
+      "content": "Confirmarlo en Steam"
+    },
+    "created": {
+      "title": "Nuevo intercambio!",
+      "content": "{{1}} ofrece un intercambio"
+    },
+    "finished": {
+      "title": "¡Gran oferta!",
+      "content": "¡Compártelo con tus amigos!"
+    },
+    "finishedRepeat": {
+      "title": "¿Quieres comerciar con {{1}} nuevamente?",
+      "content": "¡Agrégalo como amigo! Manténgase al día cuando tendrá nuevas pieles!"
+    },
+    "rejected": {
+      "title": "Su comercio fue rechazado",
+      "content": "¡Es hora de crear otro!"
+    },
+    "autoClosed": {
+      "title": "Su comercio no es aceptado",
+      "content": "¡Escribe a {{1}} y sugiere uno nuevo!"
+    }
+  },
+  "specialOffer": {
+    "premiumAfterTradeBan": {
+      "10_hours_before": {
+        "title": "10 hours untli sale ends 😱",
+        "content": "Hurry up for an almost free Premium 🔥"
+      },
+      "6_hours_before": {
+        "title": "Premium is on sale and waiting for you 😍",
+        "content": "Hurry up! Only 6 hours left ⌛"
+      },
+      "2_hours_before": {
+        "title": "Last chance 😏",
+        "content": "2 hours till the end of sale 🤑"
+      }
+    }
+  }
+}

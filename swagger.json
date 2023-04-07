@@ -1,0 +1,6299 @@
+{
+  "swagger": "2.0",
+  "basePath": "/",
+  "x-api-id": "skinswipe",
+  "info": {
+    "title": "skinswipe",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/adColony/reward": {
+      "get": {
+        "description": "Выдача награды за просмотр рекламы adColony",
+        "tags": ["ads"],
+        "parameters": null,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/ads": {
+      "get": {
+        "description": "Получение текущего банера",
+        "tags": ["ads"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/ads/list": {
+      "get": {
+        "description": "Получение текущих банеров",
+        "tags": ["ads"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/ads/reward": {
+      "post": {
+        "description": "Получение награды за рекламу",
+        "tags": ["ads"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "id",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/advertisement/reward/{cohort}": {
+      "get": {
+        "description": "Реклама",
+        "tags": ["advertisement"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "cohort",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/advertisement/rewardCount/{cohort}": {
+      "get": {
+        "description": "Реклама",
+        "tags": ["advertisement"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "cohort",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction": {
+      "post": {
+        "description": "Создание нового аукциона",
+        "tags": ["auction"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "assets": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "message": {
+                  "type": "string"
+                },
+                "premium": {
+                  "type": "boolean"
+                },
+                "disableComments": {
+                  "type": "boolean"
+                },
+                "games": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "minSkinPrice": {
+                  "type": "number"
+                },
+                "minBetPrice": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/{auctionId}": {
+      "get": {
+        "description": "Получние одного аукциона",
+        "tags": ["auction"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "auctionId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/list": {
+      "post": {
+        "description": "Получение списка аукционов.",
+        "tags": ["auction"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "offset": {
+                  "type": "number"
+                },
+                "limit": {
+                  "type": "number"
+                },
+                "statusType": {
+                  "type": "string"
+                },
+                "filters": {
+                  "type": "object",
+                  "properties": {
+                    "price": {
+                      "type": "object",
+                      "properties": {
+                        "min": {
+                          "type": "number"
+                        },
+                        "max": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 80
+                    },
+                    "csgo": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "float": {
+                          "type": "object",
+                          "properties": {
+                            "from": {
+                              "type": "number",
+                              "default": 0
+                            },
+                            "to": {
+                              "type": "number",
+                              "default": 100
+                            }
+                          }
+                        },
+                        "statTrack": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "weapon": {
+                          "type": "array",
+                          "default": ["tec-9"],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "exterior": {
+                          "type": "array",
+                          "default": ["minimal wear"],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "stickerCount": {
+                          "type": "number"
+                        },
+                        "stickerNames": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "paintSeed": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "dota2": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "rarity": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "hero": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "slot": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "runeNames": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "tf2": {
+                      "type": "object",
+                      "properties": {
+                        "class": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "weapon": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/listAnonymous": {
+      "post": {
+        "description": "Получение списка аукционов без авторизации",
+        "tags": ["auction"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "offset": {
+                  "type": "number"
+                },
+                "limit": {
+                  "type": "number"
+                }
+              },
+              "required": ["offset", "limit"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/{auctionId}/up": {
+      "post": {
+        "description": "Поднятие аукциона",
+        "tags": ["auction"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "auctionId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/upAllPrice": {
+      "get": {
+        "description": "Получение цены поднятия всех аукционов (своих, открытых)",
+        "tags": ["auction"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/upAll": {
+      "post": {
+        "description": "Поднятие всех аукционов (своих, открытых)",
+        "tags": ["auction"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/{auctionId}/close": {
+      "post": {
+        "description": "Закрытие аукциона",
+        "tags": ["auction"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "auctionId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/{auctionId}/reopen": {
+      "post": {
+        "description": "Переоткрытие аукциона (в статусе processed)",
+        "tags": ["auction"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "auctionId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/{auctionId}/premium": {
+      "post": {
+        "description": "Выделение аукциона",
+        "tags": ["auction"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "auctionId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/{auctionId}/bet/{betId}": {
+      "delete": {
+        "description": "Удаление ставки",
+        "tags": ["auction"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "auctionId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          },
+          {
+            "in": "path",
+            "name": "betId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/upAuction": {
+      "post": {
+        "description": "Поднятие аукциона (i)",
+        "deprecated": true,
+        "tags": ["Будет удалено 01.08.2020"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/getAuctionsWithoutAuth": {
+      "post": {
+        "description": "Получение списка аукционов без авторизации (-I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/getAuction": {
+      "post": {
+        "description": "Получние одного аукциона (A -I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/v2/getAuctionsWithoutAuth": {
+      "post": {
+        "description": "Получение списка аукционов без авторизации (A I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/reopen/{auctionId}": {
+      "post": {
+        "description": "Переоткрытие аукциона (в статусе processed) (-I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "auctionId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/v2/getAuction": {
+      "post": {
+        "description": "Получние одного аукциона (A I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/close": {
+      "post": {
+        "description": "Закрытие аукциона (-I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/v2/createauction": {
+      "post": {
+        "description": "Создание нового аукциона (-A I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/bet": {
+      "delete": {
+        "description": "Удаление ставки (-I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/auction/v2/getAuctions": {
+      "post": {
+        "description": "Получение списка аукционов (A I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/bot/inventory": {
+      "post": {
+        "description": "Получение инвентаря бота",
+        "tags": ["market"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "page": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/bot/trade/create": {
+      "post": {
+        "description": "Создание трейда",
+        "tags": ["market"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/bot/trade/send": {
+      "post": {
+        "description": "Отправка вышедших из трейд бана предметов",
+        "tags": ["market"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/bot/trade/get/{id}": {
+      "get": {
+        "description": "Получение трейда по id",
+        "tags": ["market"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/bot/trades/active": {
+      "post": {
+        "description": "Получение трейдов активных в течении 20 минут",
+        "tags": ["market"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "body",
+            "description": "Request query.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "tradeIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/bot/trades/history": {
+      "post": {
+        "description": "Получение получение страницы трейдов (30 шт)",
+        "tags": ["market"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "body",
+            "description": "Request query.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "page": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/chat/rooms": {
+      "get": {
+        "description": "Список комнат",
+        "tags": ["chat"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/chat/rooms/{limit}/{offset}": {
+      "get": {
+        "description": "Список комнат (с пагинацией)",
+        "tags": ["chat"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "number",
+            "required": true,
+            "default": ""
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "number",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/chat/rooms/removed": {
+      "get": {
+        "description": "Список комнат",
+        "tags": ["chat"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/chat/room/{roomName}": {
+      "get": {
+        "description": "комната",
+        "tags": ["chat"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "roomName",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "description": "комната",
+        "tags": ["chat"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "roomName",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/chat/blackList": {
+      "get": {
+        "description": "blackList",
+        "tags": ["chat"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/chat/resetRoomCounters/{roomName}": {
+      "get": {
+        "description": "Сброс количества непрочитанных сообщений текущей комнаты (когда пришло новое сообщение в текущую комнату)",
+        "tags": ["chat"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "roomName",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/chat/createRoom/{steamId}": {
+      "get": {
+        "description": "Создание комнаты чата",
+        "tags": ["chat"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/chat/counters": {
+      "get": {
+        "description": "counters",
+        "tags": ["chat"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/chat/messages/{roomName}/{limit}/{offset}": {
+      "get": {
+        "description": "сообщения",
+        "tags": ["chat"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "roomName",
+            "type": "string",
+            "required": true,
+            "default": ""
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "number",
+            "required": true,
+            "default": ""
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "number",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/chat/blackList/{steamId}": {
+      "post": {
+        "description": "кинуть в блеклист",
+        "tags": ["chat"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/comment/{eType}/{eid}": {
+      "post": {
+        "description": "Коммент сущности (auction / trade / skin)",
+        "tags": ["comment"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "eType",
+            "type": "string",
+            "required": true,
+            "default": ""
+          },
+          {
+            "in": "path",
+            "name": "eid",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/comment/{cid}": {
+      "delete": {
+        "description": "Удаление комментария",
+        "tags": ["comment"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "cid",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/cooldown/{type}/reset": {
+      "post": {
+        "description": "Сброс кулдауна для премиумов за монеты",
+        "tags": ["cooldown"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "type",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/fake_user": {
+      "post": {
+        "description": "Создание фейкового пользователя",
+        "tags": ["fake_user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firebaseToken": {
+                  "type": "string"
+                },
+                "device": {
+                  "type": "string"
+                },
+                "os_type": {
+                  "type": "string"
+                }
+              },
+              "required": ["firebaseToken", "device", "os_type"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/fake_user/{id}": {
+      "put": {
+        "description": "Обновления fake пользователя",
+        "tags": ["fake_user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firebaseToken": {
+                  "type": "string"
+                },
+                "device": {
+                  "type": "string"
+                },
+                "os_type": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "description": "Удаление временного пользователя",
+        "tags": ["fake_user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "userId": {
+                  "type": "string"
+                }
+              },
+              "required": ["userId"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/feedback": {
+      "post": {
+        "description": "Добавление фидбека",
+        "tags": ["feedback"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 100
+                },
+                "phone": {
+                  "type": "string",
+                  "minLength": 5,
+                  "maxLength": 100
+                },
+                "email": {
+                  "type": "string",
+                  "minLength": 5,
+                  "maxLength": 100
+                },
+                "comment": {
+                  "type": "string",
+                  "minLength": 5,
+                  "maxLength": 1000
+                }
+              },
+              "required": ["name", "email", "comment"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/filters/v2/getAllFilters": {
+      "post": {
+        "description": "Метод получения фильтров (I)",
+        "deprecated": true,
+        "tags": ["Будет удалено 01.08.2020"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/filters": {
+      "get": {
+        "description": "Все фильтры",
+        "tags": ["filters"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/getIntersections": {
+      "post": {
+        "description": "Получение списка людей для ленты",
+        "tags": ["people"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "offset": {
+                  "type": "number"
+                },
+                "limit": {
+                  "type": "number"
+                },
+                "filters": {
+                  "type": "string"
+                },
+                "username": {
+                  "type": "string"
+                },
+                "online": {
+                  "type": "number"
+                }
+              },
+              "required": ["offset", "limit"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/getIntersection": {
+      "post": {
+        "description": "Получение 1 карточки с конкретным юзером",
+        "tags": ["people"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/getintersection": {
+      "post": {
+        "description": "Получение 1 карточки с конкретным юзером (A -I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/v2/getIntersections": {
+      "post": {
+        "description": "Получение списка людей для ленты (-A)",
+        "tags": ["people"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/inventory/blackList": {
+      "get": {
+        "description": "Заблокированные предметы",
+        "tags": ["inventory"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "description": "Блокировка предметов",
+        "tags": ["inventory"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "asset": {
+                  "type": "string"
+                },
+                "clear": {
+                  "type": "boolean"
+                }
+              },
+              "required": ["assets", "clear"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/inventory/super/{offset}/{limit}": {
+      "post": {
+        "description": "Получение списка предметов пользователей для создания супертрейда",
+        "tags": ["inventory"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "string",
+            "required": true,
+            "default": "0"
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "string",
+            "required": true,
+            "default": "20"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "sortBy": {
+                  "type": "string"
+                },
+                "sortOrder": {
+                  "type": "number"
+                },
+                "filters": {
+                  "type": "object",
+                  "properties": {
+                    "price": {
+                      "type": "object",
+                      "properties": {
+                        "min": {
+                          "type": "number"
+                        },
+                        "max": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 80
+                    },
+                    "csgo": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "statTrack": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "weapon": {
+                          "type": "array",
+                          "default": ["tec-9"],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "exterior": {
+                          "type": "array",
+                          "default": ["minimal wear"],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "stickerCount": {
+                          "type": "number"
+                        },
+                        "stickerNames": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "paintSeed": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "dota2": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "rarity": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "hero": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "slot": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "runeNames": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "tf2": {
+                      "type": "object",
+                      "properties": {
+                        "class": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "weapon": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/inventory/{steamId}/{offset}/{limit}": {
+      "post": {
+        "description": "Получение списка предметов конкретного пользователя",
+        "tags": ["inventory"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true,
+            "default": "0"
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "string",
+            "required": true,
+            "default": "0"
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "string",
+            "required": true,
+            "default": "20"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "filters": {
+                  "type": "object",
+                  "properties": {
+                    "price": {
+                      "type": "object",
+                      "properties": {
+                        "min": {
+                          "type": "number"
+                        },
+                        "max": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 80
+                    },
+                    "csgo": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "float": {
+                          "type": "object",
+                          "properties": {
+                            "from": {
+                              "type": "number",
+                              "default": 0
+                            },
+                            "to": {
+                              "type": "number",
+                              "default": 100
+                            }
+                          }
+                        },
+                        "statTrack": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "weapon": {
+                          "type": "array",
+                          "default": ["tec-9"],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "exterior": {
+                          "type": "array",
+                          "default": ["minimal wear"],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "stickerCount": {
+                          "type": "number"
+                        },
+                        "stickerNames": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "paintSeed": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "dota2": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "rarity": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "hero": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "slot": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "runeNames": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "tf2": {
+                      "type": "object",
+                      "properties": {
+                        "class": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "weapon": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/inventory/{offset}/{limit}": {
+      "post": {
+        "description": "Получение списка предметов текущего пользователя",
+        "tags": ["inventory"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "string",
+            "required": true,
+            "default": "0"
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "string",
+            "required": true,
+            "default": "20"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "filters": {
+                  "type": "object",
+                  "properties": {
+                    "price": {
+                      "type": "object",
+                      "properties": {
+                        "min": {
+                          "type": "number"
+                        },
+                        "max": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 80
+                    },
+                    "csgo": {
+                      "type": "object",
+                      "properties": {
+                        "float": {
+                          "type": "object",
+                          "properties": {
+                            "from": {
+                              "type": "number",
+                              "default": 0
+                            },
+                            "to": {
+                              "type": "number",
+                              "default": 100
+                            }
+                          }
+                        },
+                        "statTrack": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "weapon": {
+                          "type": "array",
+                          "default": ["tec-9"],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "exterior": {
+                          "type": "array",
+                          "default": ["minimal wear"],
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "dota2": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "rarity": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "hero": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/saveContacts": {
+      "post": {
+        "description": "Save landing contacts",
+        "tags": ["landing"],
+        "consumes": ["application/json"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/saveAdContacts": {
+      "post": {
+        "description": "Save landing contacts",
+        "tags": ["landing"],
+        "consumes": ["application/json"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/leaderboard": {
+      "get": {
+        "description": "Получить список лидеров (A I)",
+        "tags": ["Будет удалено 03.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/leaderboard/{offset}/{limit}": {
+      "get": {
+        "description": "Получить список лидеров",
+        "tags": ["leaderboard"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "number",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/like/{eType}/{eid}": {
+      "put": {
+        "description": "Лайк любого обьекта",
+        "tags": ["like"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "eType",
+            "type": "string",
+            "required": true,
+            "default": ""
+          },
+          {
+            "in": "path",
+            "name": "eid",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/market/user/inventory/{offset}/{limit}": {
+      "post": {
+        "description": "Получение списка предметов текущего пользователя для маркета",
+        "tags": ["market"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "string",
+            "required": true,
+            "default": "0"
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "string",
+            "required": true,
+            "default": "20"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "filters": {
+                  "type": "object",
+                  "properties": {
+                    "price": {
+                      "type": "object",
+                      "properties": {
+                        "min": {
+                          "type": "number"
+                        },
+                        "max": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 80
+                    },
+                    "csgo": {
+                      "type": "object",
+                      "properties": {
+                        "float": {
+                          "type": "object",
+                          "properties": {
+                            "from": {
+                              "type": "number",
+                              "default": 0
+                            },
+                            "to": {
+                              "type": "number",
+                              "default": 100
+                            }
+                          }
+                        },
+                        "statTrack": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "weapon": {
+                          "type": "array",
+                          "default": ["tec-9"],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "exterior": {
+                          "type": "array",
+                          "default": ["minimal wear"],
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "dota2": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "rarity": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "hero": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/market/user/inventory/{page}": {
+      "post": {
+        "description": "Получение списка предметов текущего пользователя для маркета",
+        "tags": ["market"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "string",
+            "required": true,
+            "default": "0"
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "string",
+            "required": true,
+            "default": "20"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "filters": {
+                  "type": "object",
+                  "properties": {
+                    "price": {
+                      "type": "object",
+                      "properties": {
+                        "min": {
+                          "type": "number"
+                        },
+                        "max": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 80
+                    },
+                    "csgo": {
+                      "type": "object",
+                      "properties": {
+                        "float": {
+                          "type": "object",
+                          "properties": {
+                            "from": {
+                              "type": "number",
+                              "default": 0
+                            },
+                            "to": {
+                              "type": "number",
+                              "default": 100
+                            }
+                          }
+                        },
+                        "statTrack": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "weapon": {
+                          "type": "array",
+                          "default": ["tec-9"],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "exterior": {
+                          "type": "array",
+                          "default": ["minimal wear"],
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "dota2": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "rarity": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "hero": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/market/user/virtual/inventory/{offset}/{limit}": {
+      "post": {
+        "description": "",
+        "tags": ["market"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "string",
+            "required": true,
+            "default": "0"
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "string",
+            "required": true,
+            "default": "20"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "filters": {
+                  "type": "object",
+                  "properties": {
+                    "price": {
+                      "type": "object",
+                      "properties": {
+                        "min": {
+                          "type": "number"
+                        },
+                        "max": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 80
+                    },
+                    "csgo": {
+                      "type": "object",
+                      "properties": {
+                        "float": {
+                          "type": "object",
+                          "properties": {
+                            "from": {
+                              "type": "number",
+                              "default": 0
+                            },
+                            "to": {
+                              "type": "number",
+                              "default": 100
+                            }
+                          }
+                        },
+                        "statTrack": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "weapon": {
+                          "type": "array",
+                          "default": ["tec-9"],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "exterior": {
+                          "type": "array",
+                          "default": ["minimal wear"],
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "dota2": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "rarity": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "hero": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/news/wall/{limit}/{offset}": {
+      "get": {
+        "description": "Стена",
+        "tags": ["news"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "number",
+            "required": true,
+            "default": "20"
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "number",
+            "required": true,
+            "default": "0"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/news/comments/{limit}/{offset}": {
+      "get": {
+        "description": "Комментарии",
+        "tags": ["news"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "number",
+            "required": true,
+            "default": "20"
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "number",
+            "required": true,
+            "default": "0"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/news/items/{limit}/{offset}": {
+      "get": {
+        "description": "Обновления предметов",
+        "tags": ["news"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "number",
+            "required": true,
+            "default": "20"
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "number",
+            "required": true,
+            "default": "0"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/purchases": {
+      "get": {
+        "description": "Получение списка покупок",
+        "tags": ["purchases"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Обычный ответ",
+            "examples": {
+              "application/json": "{\n  status: 'success',\n  result: {\n    subscriber: false,\n    coinCount: 20,\n    fireCoinsCount: 10,\n    purchases: [\n      {\n          \"type\": \"premium\",\n          \"createdAt\": \"2020-07-16T09:33:10.763Z\",\n          \"expiration\": \"2020-07-16T09:44:53.561Z\",\n          \"expired\": true\n      },\n      {\n          \"type\": \"fireCoins\",\n          \"createdAt\": \"2020-07-15T08:21:42.193Z\",\n          \"amount\": 150,\n          \"used\": 0,\n          \"expiration\": \"2020-08-14T08:21:42.192Z\",\n          \"expired\": false\n      },\n      {\n          \"type\": \"transaction\",\n          \"entity\": \"fireCoins\",\n          \"createdAt\": \"2020-07-10T10:14:39.500Z\",\n          \"amount\": -10\n      },\n      {\n          \"type\": \"transaction\",\n          \"entity\": \"coins\",\n          \"createdAt\": \"2020-06-19T06:33:33.166Z\",\n          \"amount\": -10\n      },\n      {\n          \"type\": \"transaction\",\n          \"entity\": \"coins\",\n          \"createdAt\": \"2020-06-09T16:02:50.345Z\",\n          \"amount\": 10\n      },\n      {\n          \"type\": \"premium\",\n          \"createdAt\": \"2020-02-14T16:18:28.711Z\",\n          \"expiration\": \"2020-05-14T18:17:21.219Z\",\n          \"expired\": true\n      },\n    ]\n}\n"
+            }
+          }
+        }
+      }
+    },
+    "/api/user/purchaseAndroid": {
+      "post": {
+        "description": "Покупка монет на android",
+        "tags": ["purchases"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/purchaseIOS": {
+      "post": {
+        "description": "Оплата для ios, проверяет в apple",
+        "tags": ["purchases"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/quests": {
+      "get": {
+        "description": "Получение списка квестов",
+        "tags": ["quests"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/quests/rewards": {
+      "get": {
+        "description": "Список наград",
+        "tags": ["quests"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/quests/reward": {
+      "get": {
+        "description": "Получение награды за текущий квест",
+        "tags": ["quests"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/scripts/ios": {
+      "get": {
+        "description": "Отдает скрипты для ios",
+        "tags": ["scripts"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/scripts/android": {
+      "get": {
+        "description": "Отдает скрипты для android",
+        "tags": ["scripts"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/scripts/android/v2": {
+      "get": {
+        "description": "Отдает скрипты для android",
+        "tags": ["scripts"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/scripts/error": {
+      "post": {
+        "description": "Записывает ошибку в базу",
+        "tags": ["scripts"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "screen": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "script": {
+                  "type": "string"
+                },
+                "scriptResult": {
+                  "type": "string"
+                },
+                "pageContent": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/settings": {
+      "get": {
+        "description": "Получение настроек приложения",
+        "tags": ["settings"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/share/*": {
+      "get": {
+        "description": "Deep Links",
+        "tags": ["share"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/skin/{steamId}/{assetId}": {
+      "get": {
+        "description": "Инфо о скине",
+        "tags": ["skin"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          },
+          {
+            "in": "path",
+            "name": "assetId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/skin/priceHistory/{appId}/{name}": {
+      "get": {
+        "description": "История цен скина",
+        "tags": ["skin"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "name",
+            "type": "string",
+            "required": true,
+            "default": ""
+          },
+          {
+            "in": "path",
+            "name": "appId",
+            "type": "number",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/skin/{name}": {
+      "get": {
+        "description": "Инфо о скине по имени",
+        "tags": ["skin"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "name",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/steam/getLoginUrl": {
+      "get": {
+        "description": "Получение ссылки для openid авторизации через стим, нужно чтобы мы узнали steamId юзера (A -I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/steam/loginURL": {
+      "get": {
+        "description": "Получение ссылки для openid авторизации через стим",
+        "tags": ["auth"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/steam/login": {
+      "get": {
+        "description": "Callback ссылка для steam, авторизует по openid и отдает steamId",
+        "tags": ["auth"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/steam/inventories/status": {
+      "get": {
+        "description": "Returns steam inventories status",
+        "tags": ["auth"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/stories": {
+      "get": {
+        "description": "Получение историй",
+        "tags": ["stories"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/story/{id}": {
+      "get": {
+        "description": "Получение истории по _id",
+        "tags": ["stories"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/stories/watched": {
+      "post": {
+        "description": "Установка флага просмотрен для истории ",
+        "tags": ["stories"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "id",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/subAndroidTest": {
+      "post": {
+        "description": "Подписка на андроид, устаревший метод",
+        "tags": ["subscription"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/sub/android": {
+      "post": {
+        "description": "Подписка на андроид, новый метод",
+        "tags": ["subscription"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/sub/android/amazon": {
+      "post": {
+        "description": "Подписка на андроид amazon, новый метод",
+        "tags": ["subscription"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/sub/android/amazon/reset": {
+      "post": {
+        "description": "Удаление amazon подписки",
+        "tags": ["subscription"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/subIOS": {
+      "post": {
+        "description": "Подписка для ios, проверяет в apple",
+        "tags": ["subscription"],
+        "consumes": ["application/jsonandroid/amazon"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/subscription/iosKassa": {
+      "post": {
+        "description": "Подписка для ios, проверяет в yandex.kassa",
+        "tags": ["subscription"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "token": {
+                  "type": "string"
+                }
+              },
+              "required": ["token"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/subscription/iosKassaToken": {
+      "post": {
+        "description": "Подписка для ios, записывает токен и выдаёт confirmation_url",
+        "tags": ["subscription"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "token": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "string"
+                },
+                "months": {
+                  "type": "number"
+                }
+              },
+              "required": ["token", "amount", "months"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/getSubState": {
+      "post": {
+        "description": "Получение информации о подписке, используется при старте приложения",
+        "tags": ["subscription"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/rooms": {
+      "get": {
+        "description": "Список комнат",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/room/{roomName}": {
+      "get": {
+        "description": "getRoom",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "roomName",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/messages/{roomName}/{limit}/{offset}": {
+      "get": {
+        "description": "messages",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "roomName",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "limit",
+            "type": "number",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "offset",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/resolve/{steamId}": {
+      "get": {
+        "description": "resolve",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/banList": {
+      "get": {
+        "description": "banList",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/bookmarkList": {
+      "get": {
+        "description": "bookmarkList",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/ban/{steamId}/{hours}": {
+      "get": {
+        "description": "ban",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "hours",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/abuse/{steamId}": {
+      "get": {
+        "description": "abuse",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/bookmark/{steamId}": {
+      "get": {
+        "description": "bookmark",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/globalBan/{steamId}": {
+      "get": {
+        "description": "globalBan",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/makeTop/{steamId}": {
+      "get": {
+        "description": "makeTop",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/addCoins/{steamId}": {
+      "get": {
+        "description": "addCoins",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/support/savePoints/{steamId}/{points}": {
+      "get": {
+        "description": "savePoints",
+        "tags": ["support"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "points",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/getInfoForTradeWithOffset": {
+      "post": {
+        "description": "Получение инормации о скинах для трейда",
+        "deprecated": true,
+        "tags": ["deprecated"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/getCountUsersHaveItems": {
+      "post": {
+        "description": "Сколько юзеров имеют конкретный скин",
+        "tags": ["refactoring"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header"
+          },
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/accept": {
+      "post": {
+        "description": "Принятие трейда, супер трейда, ставки. Проверяет скины из трейда",
+        "tags": ["refactoring"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/reject": {
+      "post": {
+        "description": "Отклоняет тред, супер трейд, ставку",
+        "tags": ["refactoring"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/status/push": {
+      "post": {
+        "description": "Изменяет steam статус трейда, каждый пуш статуса сопровождается проверкой в steam на клиенте",
+        "tags": ["refactoring"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/steam/error": {
+      "post": {
+        "description": "Изменяет steam статус трейда, каждый пуш статуса сопровождается проверкой в steam на клиенте",
+        "tags": ["refactoring"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/steam/sent/list": {
+      "get": {
+        "description": "Получения трейдов для принятия",
+        "tags": ["trade"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/steam/received/list": {
+      "get": {
+        "description": "Получения трейдов для подтверждения",
+        "tags": ["trade"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/v2/getTrade": {
+      "post": {
+        "description": "Получение одного трейда. Используеться при открытии пуша о новом трейде",
+        "deprecated": true,
+        "tags": ["deprecated"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/{tradeId}": {
+      "get": {
+        "description": "Получение одного трейда. Используеться при открытии пуша о новом трейде (без зеркалирования)",
+        "tags": ["trade"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "tradeId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/v2/getTrades": {
+      "post": {
+        "description": "Новый метов получения трейдов с пагинацией и статусами.",
+        "deprecated": true,
+        "tags": ["trade"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "hidden": {
+                  "type": "boolean"
+                },
+                "typeStatus": {
+                  "type": "string"
+                },
+                "offset": {
+                  "type": "number"
+                },
+                "limit": {
+                  "type": "number"
+                },
+                "sortBy": {
+                  "type": "string"
+                },
+                "sortOrder": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/v3/getTrades": {
+      "post": {
+        "description": "Новый метов получения трейдов с пагинацией и статусами (без зеркалирования)",
+        "tags": ["trade"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "offset": {
+                  "type": "number"
+                },
+                "limit": {
+                  "type": "number"
+                },
+                "sortBy": {
+                  "type": "string"
+                },
+                "sortOrder": {
+                  "type": "number"
+                },
+                "filters": {
+                  "type": "object",
+                  "properties": {
+                    "price": {
+                      "type": "object",
+                      "properties": {
+                        "min": {
+                          "type": "number"
+                        },
+                        "max": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 2,
+                      "maxLength": 80
+                    },
+                    "csgo": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "float": {
+                          "type": "object",
+                          "properties": {
+                            "from": {
+                              "type": "number",
+                              "default": 0
+                            },
+                            "to": {
+                              "type": "number",
+                              "default": 100
+                            }
+                          }
+                        },
+                        "statTrack": {
+                          "type": "boolean",
+                          "default": false
+                        },
+                        "weapon": {
+                          "type": "array",
+                          "default": ["tec-9"],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "exterior": {
+                          "type": "array",
+                          "default": ["minimal wear"],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "stickerCount": {
+                          "type": "number"
+                        },
+                        "stickerNames": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "paintSeed": {
+                          "type": "array",
+                          "default": false,
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "dota2": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "rarity": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "hero": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "slot": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "runeNames": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "tf2": {
+                      "type": "object",
+                      "properties": {
+                        "class": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "weapon": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trades/declineAll": {
+      "post": {
+        "description": "Отклонение всех трейдов",
+        "tags": ["trade"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/{tradeId}/premium": {
+      "post": {
+        "description": "Выделение трейда",
+        "tags": ["trade"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "tradeId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/upAllSuperTradesPrice": {
+      "get": {
+        "description": "Получение цены поднятия всех супертрейдов (своих, открытых)",
+        "tags": ["trade"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/upAllSuperTrades": {
+      "post": {
+        "description": "Поднятие всех супертрейдов (своих, открытых)",
+        "tags": ["trade"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/v2/getInfoForTradeWithOffset": {
+      "post": {
+        "description": "Получение инормации о скинах для трейда",
+        "deprecated": true,
+        "tags": ["deprecated"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/v2/createTrade": {
+      "post": {
+        "description": "Создание трейда, супер трейда, ставки на аукцион",
+        "tags": ["trade"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "auctionId": {
+                  "type": "string"
+                },
+                "autoTrade": {
+                  "type": "boolean"
+                },
+                "myItemsAssetIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "hisItemsAssetIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "hisItemsNames": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "partnerSteamID": {
+                  "type": "string"
+                },
+                "premium": {
+                  "type": "boolean"
+                }
+              },
+              "required": ["partnerSteamID", "myItemsAssetIds"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/trade/{tradeId}/up": {
+      "post": {
+        "description": "Поднятие трейда",
+        "tags": ["trade"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "tradeId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/tradeUrls": {
+      "get": {
+        "description": "Получить трейд урлы для проверки трейд бана",
+        "tags": ["tradeUrls"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/appstrings/screen": {
+      "post": {
+        "description": "Получение текста для конкретного экрана (A I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/translation/{screen}/{locale}/{platform}": {
+      "get": {
+        "description": "Получение текста для конкретного экрана",
+        "tags": ["translation"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "screen",
+            "type": "string",
+            "required": true,
+            "default": ""
+          },
+          {
+            "in": "path",
+            "name": "locale",
+            "type": "string",
+            "required": true,
+            "default": ""
+          },
+          {
+            "in": "path",
+            "name": "platform",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/get/{steamId}": {
+      "get": {
+        "description": "Получение публичной информации о пользователе (-i)",
+        "deprecated": true,
+        "tags": ["profile"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/profile/{steamId}": {
+      "get": {
+        "description": "Получение информации о пользователе, информация отображается в профиле",
+        "tags": ["profile"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/getUserInfo": {
+      "post": {
+        "description": "Получение информации о пользователе, информация отображается в профиле",
+        "tags": ["profile"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/personaname": {
+      "post": {
+        "description": "Установка никнейма",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "personaname": {
+                  "type": "string"
+                }
+              },
+              "required": ["personaname"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/amplitude": {
+      "post": {
+        "description": "Установка amplitude",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "personaname": {
+                  "type": "string"
+                }
+              },
+              "required": ["personaname"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/achievements": {
+      "get": {
+        "description": "Ачивки",
+        "tags": ["achievements"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/logout": {
+      "get": {
+        "description": "Логаут",
+        "tags": ["auth"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/addOsType": {
+      "post": {
+        "description": "Добавление типа устройства",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "os": {
+                  "type": "string"
+                },
+                "os_version": {
+                  "type": "string"
+                },
+                "model": {
+                  "type": "string"
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "app_version": {
+                  "type": "string"
+                }
+              },
+              "required": ["os", "os_version", "model", "locale", "app_version"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/": {
+      "get": {
+        "description": "Получение информации о пользователе, информация отображается в профиле",
+        "tags": ["user"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/setTradeUrl": {
+      "post": {
+        "description": "Устанавливает tradeUrl по которому в steam создается трейд",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/setEmail": {
+      "post": {
+        "description": "Устанавливает email",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/statusMessage": {
+      "post": {
+        "description": "Устанавливает statusMessage",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user": {
+      "patch": {
+        "description": "Изменяет юзера",
+        "tags": ["user"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/getCoinCount": {
+      "post": {
+        "description": "Получение текущего колличества монет",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/money/get": {
+      "get": {
+        "description": "Получение текущего баланса",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/setFirebaseToken": {
+      "post": {
+        "description": "Устанавливает firebase токен для отправки пушей",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firebaseToken": {
+                  "type": "string"
+                },
+                "device": {
+                  "type": "string"
+                },
+                "os_type": {
+                  "type": "string"
+                }
+              },
+              "required": ["firebaseToken", "device", "os_type"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/setAnonFirebaseToken": {
+      "post": {
+        "description": "Устанавливает firebase токен для отправки пушей",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firebaseToken": {
+                  "type": "string"
+                },
+                "device": {
+                  "type": "string"
+                },
+                "os_type": {
+                  "type": "string"
+                }
+              },
+              "required": ["firebaseToken", "device", "os_type"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/getUserLimits": {
+      "post": {
+        "description": "Получение лимитов пользователя, чтобы фронт знал может ли пользователь выполнить одно из действий(создать супер трейд, создать аукцион, бесплатно поднять аукцион, бесплатно подняться в ленте)",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/upTraderRating": {
+      "post": {
+        "description": "Апает traderRating юзера, позволяя ему встать на 1 место",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/sendTradePushToUser": {
+      "post": {
+        "description": "Отправка пуша юзеру партнеру в трейде, при условии что принять не удалось и возникла ошибка steam(Не подключен steam guard, не найден скин в одном из инвентарей, нет возможности обмениваться, ошибки steam)",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/setBans": {
+      "post": {
+        "description": "Установить юзеру его ировые баны",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "bans": {
+                  "type": "object",
+                  "properties": {
+                    "TRADEBAN": {
+                      "type": "boolean"
+                    },
+                    "CSGO": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              },
+              "required": ["bans"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/readFAQ": {
+      "post": {
+        "description": "Юзер прочитал FAQ, выдача монет",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/v2/updateItems": {
+      "post": {
+        "description": "Обновление инвентаря",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/inventory/reset": {
+      "post": {
+        "description": "Кнопка обновления инвентаря",
+        "tags": ["inventory"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/v2/wishlist/getItemsWithOffset": {
+      "post": {
+        "description": "Получение списка всех предметов, для создание супер трейда",
+        "tags": ["user"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/v2/exchange/getItemsWithOffset": {
+      "post": {
+        "description": "Получение списка предметов, которые есть у пользователя. Используеться для создания супер трейда и создания ставки на аукцион (I)",
+        "tags": ["Будет удалено после 04.09.2020"],
+        "deprecated": true,
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "offset": {
+                  "type": "number"
+                },
+                "limit": {
+                  "type": "number"
+                },
+                "filters": {
+                  "type": "object",
+                  "properties": {
+                    "570": {
+                      "type": "object",
+                      "properties": {
+                        "Rarity": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "Quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "Hero": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "Type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "Slot": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "730": {
+                      "type": "object",
+                      "properties": {
+                        "Rarity": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "Quality": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "Weapon": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "Type": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "Exterior": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "ItemSet": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "price": {
+                      "type": "object",
+                      "properties": {
+                        "min": {
+                          "type": "number"
+                        },
+                        "max": {
+                          "type": "number"
+                        }
+                      }
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 5,
+                      "maxLength": 80
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/friends": {
+      "post": {
+        "description": "Добавляет друга",
+        "tags": ["friends"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "refUserSteamId": {
+                  "type": "string"
+                }
+              },
+              "required": ["refUserSteamId"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "description": "Убирает друга",
+        "tags": ["friends"],
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "steamId": {
+                  "type": "string"
+                }
+              },
+              "required": ["steamId"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "get": {
+        "description": "Список друзей",
+        "tags": ["friends"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "offset",
+            "type": "number",
+            "required": true,
+            "default": 0
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "type": "number",
+            "required": true,
+            "default": 10
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/friends/{steamId}": {
+      "get": {
+        "description": "Список друзей (A I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "parameters": [
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/{steamId}/friends": {
+      "get": {
+        "description": "Список друзей",
+        "tags": ["friends"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "offset",
+            "type": "number",
+            "required": true,
+            "default": 0
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "type": "number",
+            "required": true,
+            "default": 10
+          },
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          },
+          {
+            "in": "query",
+            "name": "common",
+            "type": "boolean",
+            "required": false,
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "name",
+            "type": "string",
+            "required": false,
+            "default": "someone"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/friends/steam": {
+      "put": {
+        "description": "Установить список друзей",
+        "tags": ["steamfriends"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body.",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "steamIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": ["steamIds"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "get": {
+        "description": "Получить список друзей из стима",
+        "tags": ["steamfriends"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "offset",
+            "type": "number",
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "limit",
+            "type": "number",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/vk/promo": {
+      "post": {
+        "description": "Занести промокод в базу",
+        "consumes": ["application/json"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/get_special_offers": {
+      "get": {
+        "description": "Получить специальные предложения",
+        "query": [
+          {
+            "in": "path",
+            "name": "steamId",
+            "type": "string",
+            "required": true,
+            "default": ""
+          }
+        ],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/user/get_action_prices": {
+      "get": {
+        "description": "Получить стоимость действий",
+        "query": null,
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/version": {
+      "get": {
+        "description": "Возвращает актуальные версии iOS, Android и API",
+        "tags": ["version"],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/wishlist/items/get": {
+      "post": {
+        "description": "Получение списка всех предметов всех юзеров (-A I)",
+        "tags": ["Будет удалено после 04.09.2020"],
+        "deprecated": true,
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/wishlist/selected/get": {
+      "get": {
+        "description": "Получение списка всех выбранных из wishlist предметов (-A I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/wishlist/selected/set": {
+      "post": {
+        "description": "Сохранение списка айтемов (-A I)",
+        "tags": ["Будет удалено 01.08.2020"],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/wishlist/getInfoForTradeWithOffset": {
+      "post": {
+        "description": "Получение информации о скинах для трейда (-A I)",
+        "tags": ["Будет удалено после 04.09.2020"],
+        "deprecated": true,
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "header",
+            "name": "x-access-token",
+            "type": "string",
+            "required": true
+          },
+          {
+            "in": "header",
+            "name": "appVersion",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}

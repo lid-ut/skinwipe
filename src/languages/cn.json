@@ -1,0 +1,268 @@
+{
+  "newComment": {
+    "auction": "{user} 在您的拍卖中发表了评论",
+    "skin": "{user} 评论了你的皮肤",
+    "trade": "{user} 评论了您的交易",
+    "partnerTrade": "{user}在与您的交易下发表了评论"
+  },
+  "newLike": {
+    "skin": "{user}喜欢您的皮肤",
+    "auction": "{user}喜欢您的拍卖",
+    "trade": "{user}喜欢您的交易"
+  },
+  "tradeBanEnd": {
+    "skin": "该项目可以在steam上撤回"
+  },
+  "faqCoinsPush": {
+    "title": "没有得到您的50个硬币吗？",
+    "content": "阅读常见问题并免费获取！"
+  },
+  "market": {
+    "acceptSteam": {
+      "title": "Sale +{price}$!",
+      "content": "Accept a trade on steam"
+    },
+    "sellerClose": {
+      "title": "You are banned for not accepting a trade from the market",
+      "content": "Unlocked date: {date}"
+    },
+    "sellerCloseFirst": {
+      "title": "You have not accepted a trade from the market",
+      "content": "First time we warn you, next time will be banned!"
+    }
+  },
+  "achievements": {
+    "oneTradeCreated": {
+      "title": "恭喜,您有了新成就！",
+      "content": "您创建了第一个交易所！"
+    },
+    "tenTradesAccepted": {
+      "title": "恭喜,您有了新成就！",
+      "content": "您已接受10次交流！"
+    },
+    "fiftyTradesAccepted": {
+      "title": "恭喜,您有了新成就！",
+      "content": "您已接受50次交流！"
+    },
+    "hundredTradesAccepted": {
+      "title": "恭喜,您有了新成就！",
+      "content": "您已接受100次交流！"
+    }
+  },
+  "getSkinSuccess": {
+    "title": "贸易准备就绪",
+    "content": "您的皮肤在Steam中等待着您！"
+  },
+  "getSkinWait": {
+    "title": "太好了！",
+    "content": "大约5分钟后皮肤就会到来）"
+  },
+  "getSkinError": {
+    "title": "对不起",
+    "content": "看来您无法进行交易,尝试为某人进行交易以找出原因。"
+  },
+  "newFriend": {
+    "title": "Congratulations!",
+    "content": "You got 50 coins for bringing a friend!"
+  },
+  "inviteFriends": {
+    "title": "Invite friend to app",
+    "content": "And get 50 coins!"
+  },
+  "friends": {
+    "actionCreated": {
+      "title": "Your friend {name} created auction!",
+      "content": "Check it!"
+    },
+    "newUser": {
+      "title": "Your friend из Steam {name} installed SkinSwipe!",
+      "content": "Add him to friends!"
+    }
+  },
+  "noSub": {
+    "1day": {
+      "title": "忘记激活保费？",
+      "content": "立即订阅！"
+    },
+    "7days": {
+      "title": "快点激活保费",
+      "content": "获得高级身份并创建更多拍卖和交易！"
+    }
+  },
+  "addPremiumAfterTradeban": {
+    "title": "嗨，您有贸易禁令，持有保费3天",
+    "content": "现在您可以全额交易"
+  },
+  "inactiveUser": {
+    "1day": {
+      "title": "建立超级交易",
+      "content": "成千上万的人会看到它！"
+    },
+    "2days": {
+      "title": "我们在人脉部分抚养了您",
+      "content": "期待新的报价！"
+    },
+    "3days": {
+      "title": "我们贷给您100个硬币",
+      "content": "明智地花钱！"
+    },
+    "4days": {
+      "title": "已经过去了很多时间",
+      "content": "查看拍卖部分中的新内容"
+    },
+    "5days": {
+      "title": "We gifting you 2 days premium!",
+      "content": "You weren't expecting this, right?"
+    },
+    "twoDaysAfterInactive": {
+      "title": "50% off the price on Premium!",
+      "content": "24 hours till end"
+    }
+  },
+  "inactiveNotRegistered": {
+    "10minutes": {
+      "title": "Finish registration",
+      "content": "And get 50 coins by promocode WELCOME"
+    },
+    "3days": {
+      "title": "Special offer",
+      "content": "Use promocode WELCOME and get your 50 coins!"
+    }
+  },
+  "inactiveWithoutActivity": {
+    "1days": {
+      "title": "Return to SkinSwipe!",
+      "content": "Don't pay for skins, you can get them free!"
+    },
+    "2days": {
+      "title": "It's been so long.",
+      "content": "Check what's new in auctions."
+    }
+  },
+  "endOfTradeBan": {
+    "title": "Tradeban is over",
+    "content": "Create your new auction!"
+  },
+  "quests": {
+    "noActivity": {
+      "title": "Try quests",
+      "content": "And get reward every day!"
+    },
+    "notRewarded": {
+      "title": "Get your reward",
+      "content": "For finished quest!"
+    },
+    "notActive2Days": {
+      "title": "Check quests!",
+      "content": "Daily reward waiting for you!"
+    },
+    "questsNotActive3Days": {
+      "title": "Lets go complete quests!",
+      "content": "We are waiting for you."
+    }
+  },
+  "auction": {
+    "closed": {
+      "title": "拍卖已过期",
+      "content": "创建一个新的！"
+    },
+    "upYourAuction": {
+      "title": "提高清单中的拍卖",
+      "content": "并获得更多出价！"
+    }
+  },
+  "bets": {
+    "accepted": {
+      "title": "{{1}}接受了您的竞价！",
+      "content": "在Steam上确认交换！"
+    },
+    "created": {
+      "title": "{{1}}在您的拍卖中出价！",
+      "content": "是时候看看您所提供的服务 ;)"
+    },
+    "reject": {
+      "title": "您的出价已被拒绝！",
+      "content": "停下来看看"
+    },
+    "betterBetPlaced": {
+      "title": "{{1}}下注${{2}}比下注多",
+      "content": "出价新！"
+    },
+    "betHavenotAccepted": {
+      "title": "{{1}}不接受您的竞标",
+      "content": "给他写信并提供交流！"
+    }
+  },
+  "userTradeAllowed": {
+    "title": "7天后你就可以了",
+    "content": "如果您是第一次这样做,Steam允许在7天后共享皮肤。拍卖会？"
+  },
+  "inventoryUpdated": {
+    "title": "您的库存已更新！",
+    "content": " "
+  },
+  "inventoryHidden": {
+    "title": "无法更新您的广告资源!",
+    "content": "让您的库存开放"
+  },
+  "skinsUnlocked": {
+    "title": "您的皮肤已解锁！",
+    "content": "现在您可以交易！"
+  },
+  "cannotUpdateInventory": {
+    "title": "无法更新您的广告资源!",
+    "content": "稍后再试"
+  },
+  "superTrade": {
+    "created": {
+      "title": "用户对您的皮肤感兴趣。",
+      "content": "{{username}}在您拥有的主题上创建了一个超级交易。看看他给予的回报"
+    },
+    "closed": {
+      "title": "超级贸易已关闭",
+      "content": "再试一次"
+    }
+  },
+  "trade": {
+    "accepted": {
+      "title": "{{name}}接受了您的交易",
+      "content": "在Steam中确认"
+    },
+    "created": {
+      "title": "新交流！",
+      "content": "{{1}}提供了交流"
+    },
+    "finished": {
+      "title": "好主意！",
+      "content": "与您的朋友分享！"
+    },
+    "finishedRepeat": {
+      "title": "您是否要再次与{{1}}进行交易？",
+      "content": "加他为好友！ 及时了解他将要拥有新皮肤的时间！"
+    },
+    "rejected": {
+      "title": "您的交易被拒绝",
+      "content": "是时候创建另一个了！"
+    },
+    "autoClosed": {
+      "title": "您的交易不被接受",
+      "content": "给{{1}}写信并提出一个新建议！"
+    }
+  },
+  "specialOffer": {
+    "premiumAfterTradeBan": {
+      "10_hours_before": {
+        "title": "10 hours untli sale ends 😱",
+        "content": "Hurry up for an almost free Premium 🔥"
+      },
+      "6_hours_before": {
+        "title": "Premium is on sale and waiting for you 😍",
+        "content": "Hurry up! Only 6 hours left ⌛"
+      },
+      "2_hours_before": {
+        "title": "Last chance 😏",
+        "content": "2 hours till the end of sale 🤑"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+/node_modules
+/scripts/market/moneytransactions.json
+.idea
+.vscode
+.nyc_output
+config.local.js
+/coverage
+lint-errors.html
+config.local.js
+public/uploads/
+public/img/user_skins/*
+newrelic_agent.log

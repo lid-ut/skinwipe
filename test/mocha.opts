@@ -1,0 +1,4 @@
+--timeout 70000
+--exit
+--reporter spec
+./test/index.js

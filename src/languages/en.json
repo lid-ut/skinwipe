@@ -1,0 +1,277 @@
+{
+  "newComment": {
+    "auction": "{user} left a new comment under your auction",
+    "skin": "{user} left a new comment under your skin",
+    "trade": "{user} left a new comment under your trade",
+    "partnerTrade": "{user} left a comment under the trade with you"
+  },
+  "newLike": {
+    "skin": "{user} liked your skin",
+    "auction": "{user} liked your auction",
+    "trade": "{user} liked your trade"
+  },
+  "market": {
+    "acceptSteam": {
+      "title": "${skinname} sold for {price}$!",
+      "content": "Come in to accept the offer"
+    },
+    "sellerClose": {
+      "title": "You are banned for not accepting a trade from the market",
+      "content": "Unlocked date: {date}"
+    },
+    "sellerCloseFirst": {
+      "title": "You have not accepted a trade from the market",
+      "content": "First time we warn you, next time will be banned!"
+    }
+  },
+
+  "tradeBanEnd": {
+    "skin": "The item can be withdrawn on steam"
+  },
+  "faqCoinsPush": {
+    "title": "Didn't get your 50 coins?",
+    "content": "Read the FAQ and get them for free!"
+  },
+  "achievements": {
+    "oneTradeCreated": {
+      "title": "Congratulations, you have a new achievement!",
+      "content": "You created your first trade!"
+    },
+    "tenTradesAccepted": {
+      "title": "Congratulations, you have a new achievement!",
+      "content": "You have accepted 10 trades!"
+    },
+    "fiftyTradesAccepted": {
+      "title": "Congratulations, you have a new achievement!",
+      "content": "You have accepted 50 trades!"
+    },
+    "hundredTradesAccepted": {
+      "title": "Congratulations, you have a new achievement!",
+      "content": "You have accepted 100 trades!"
+    }
+  },
+  "getSkinSuccess": {
+    "title": "Trade ready",
+    "content": "Your skin is waiting for you in Steam!"
+  },
+
+  "getSkinWait": {
+    "title": "Well done!",
+    "content": "Your skin will come in about 5 minutes"
+  },
+
+  "getSkinError": {
+    "title": "Sorry...",
+    "content": "You cannot receive trades. Try to create a trade for someone to find out the reason."
+  },
+
+  "newFriend": {
+    "title": "Congratulations!",
+    "content": "You got 50 coins for bringing a friend!"
+  },
+  "inviteFriends": {
+    "title": "Invite friend to app",
+    "content": "And get 50 coins!"
+  },
+  "friends": {
+    "actionCreated": {
+      "title": "Your friend {name} created auction!",
+      "content": "Check it!"
+    },
+    "newUser": {
+      "title": "Your friend из Steam {name} installed SkinSwipe!",
+      "content": "Add him to friends!"
+    }
+  },
+  "noSub": {
+    "1day": {
+      "title": "Forgot to activate premium?",
+      "content": "Subscribe now!"
+    },
+    "7days": {
+      "title": "Hurry up to activate premium",
+      "content": "Get premium status and create more auctions and trades!"
+    }
+  },
+  "addPremiumAfterTradeban": {
+    "title": "Привет, у тебя прошел трейд бан, держи премиум на 3 дня",
+    "content": "Now you can trade in full!"
+  },
+
+  "inactiveUser": {
+    "1day": {
+      "title": "Create a supertrade",
+      "content": "And thousands of people will see it!"
+    },
+    "2days": {
+      "title": "We raised you in the People section",
+      "content": "Expect new offers!"
+    },
+    "3days": {
+      "title": "We credited you 100 SkinCoins",
+      "content": "Spend it wisely!"
+    },
+    "4days": {
+      "title": "So much time has passed",
+      "content": "See what's new in the Auctions section"
+    },
+    "5days": {
+      "title": "We gifting you 2 days premium!",
+      "content": "You weren't expecting this, right?"
+    },
+    "twoDaysAfterInactive": {
+      "title": "50% off the price on Premium!",
+      "content": "24 hours till end"
+    }
+  },
+  "inactiveNotRegistered": {
+    "10minutes": {
+      "title": "Finish registration",
+      "content": "And get 50 coins by promocode WELCOME"
+    },
+    "3days": {
+      "title": "Special offer",
+      "content": "Use promocode WELCOME and get your 50 coins!"
+    }
+  },
+  "inactiveWithoutActivity": {
+    "1days": {
+      "title": "Return to SkinSwipe!",
+      "content": "Don't pay for skins, you can get them free!"
+    },
+    "2days": {
+      "title": "It's been so long.",
+      "content": "Check what's new in auctions."
+    }
+  },
+  "endOfTradeBan": {
+    "title": "Tradeban is over",
+    "content": "Create your new auction!"
+  },
+  "quests": {
+    "noActivity": {
+      "title": "Try quests",
+      "content": "And get reward every day!"
+    },
+    "notRewarded": {
+      "title": "Get your reward",
+      "content": "For finished quest!"
+    },
+    "notActive2Days": {
+      "title": "Check quests!",
+      "content": "Daily reward waiting for you!"
+    },
+    "questsNotActive3Days": {
+      "title": "Lets go complete quests!",
+      "content": "We are waiting for you."
+    }
+  },
+  "auction": {
+    "closed": {
+      "title": "The auction has expired",
+      "content": "Create a new one!"
+    },
+    "upYourAuction": {
+      "title": "Raise the auction in the list",
+      "content": "And get more bids!"
+    }
+  },
+  "bets": {
+    "accepted": {
+      "title": "{{1}} accepted your bid in the auction!",
+      "content": "Confirm the exchange on Steam!"
+    },
+    "created": {
+      "title": "{{1}} placed a bid in your auction!",
+      "content": "It's time to see what you've been offered ;)"
+    },
+    "reject": {
+      "title": "Your bet is declined!",
+      "content": "Try another auction"
+    },
+    "betterBetPlaced": {
+      "title": "{{1}} made a bet on ${{2}} greater than yours",
+      "content": "Offer a new bid!"
+    },
+    "betHavenotAccepted": {
+      "title": "{{1}} didn't accept your bid in the auction",
+      "content": "Write him and offer an exchange!"
+    }
+  },
+  "userTradeAllowed": {
+    "title": "You can trade in 7 days",
+    "content": "Steam allows to trade in 7 days if you do this for the first time. Make an auction?"
+  },
+  "inventoryUpdated": {
+    "title": "Your inventory updated!",
+    "content": " "
+  },
+  "inventoryHidden": {
+    "title": "Cannot update your inventory!",
+    "content": "Open it in Steam"
+  },
+  "skinsUnlocked": {
+    "title": "Your skins are unlocked!",
+    "content": "Now you can trade!"
+  },
+  "cannotUpdateInventory": {
+    "title": "Cannot update your inventory!",
+    "content": "Try again later"
+  },
+  "superTrade": {
+    "created": {
+      "title": "User is interested in your items",
+      "content": "{{username}} created a Super-Trade on an item you have. Tale a look what he offers"
+    },
+    "closed": {
+      "title": "Super-Trade is closed",
+      "content": "Try again"
+    }
+  },
+  "trade": {
+    "accepted": {
+      "title": "{{name}} accepted your trade",
+      "content": "Confirm it in Steam"
+    },
+    "created": {
+      "title": "New exchange!",
+      "content": "{{1}} offers an exchange"
+    },
+    "finished": {
+      "title": "Great deal!",
+      "content": "Share it with your friends!"
+    },
+    "finishedRepeat": {
+      "title": "Do you want to trade with {{1}} again?",
+      "content": "Add him as a friend! Keep up to date when he will have new skins!"
+    },
+    "rejected": {
+      "title": "Your trade was rejected",
+      "content": "It's time to create another one!"
+    },
+    "autoClosed": {
+      "title": "Your trade is not accepted",
+      "content": "Write to {{1}} and suggest a new one!"
+    }
+  },
+  "specialOffer": {
+    "trialCancel": {
+      "title": "Get 20% off Premium \uD83E\uDD11",
+      "content": "The offer is valid 24 hours ⏰"
+    },
+    "premiumAfterTradeBan": {
+      "10_hours_before": {
+        "title": "10 hours untli sale ends 😱",
+        "content": "Hurry up for an almost free Premium 🔥"
+      },
+      "6_hours_before": {
+        "title": "Premium is on sale and waiting for you 😍",
+        "content": "Hurry up! Only 6 hours left ⌛"
+      },
+      "2_hours_before": {
+        "title": "Last chance 😏",
+        "content": "2 hours till the end of sale 🤑"
+      }
+    }
+  }
+}

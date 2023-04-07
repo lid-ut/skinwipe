@@ -1,0 +1,22 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+
+lint:
+  only:
+    - DISABLED_master
+  except:
+    variables:
+      - $CI_COMMIT_REF_NAME =~ /prod/
+  script:
+    - npm install
+    - npm run lint
+
+deploy:
+  only:
+    - DISABLED_prod
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - bash deploy/deploy.sh

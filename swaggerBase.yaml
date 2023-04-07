@@ -1,0 +1,6 @@
+swagger: '2.0'
+basePath: '/'
+x-api-id: 'skinswipe'
+info:
+  title: 'skinswipe'
+  version: '1.0.0'
